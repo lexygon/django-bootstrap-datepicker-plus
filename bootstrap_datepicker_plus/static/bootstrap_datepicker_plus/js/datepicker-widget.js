@@ -1,6 +1,6 @@
 jQuery(function ($) {
     var datepickerDict = {};
-    var isBootstrap4 = $.fn.collapse.Constructor.VERSION.split('.').shift() == "4";
+    var isBootstrap4 = false;
     function fixMonthEndDate(e, picker) {
         e.date && picker.val().length && picker.val(e.date.endOf('month').format('YYYY-MM-DD'));
     }
